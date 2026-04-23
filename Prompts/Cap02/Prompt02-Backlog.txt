@@ -1,0 +1,4 @@
+Contexto: O produto será entregue em 3 releases: core, qualidade, e final.
+Objetivo: Criar backlog minimo com IDs RF/RT e critérios de aceite.
+Estilo: Chacklist Markdown.
+Respsota: Conteúdo de docs/backlog.md.

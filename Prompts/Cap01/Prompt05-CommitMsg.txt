@@ -3,4 +3,5 @@ Objetivo: erar uma mensagem de commit no padrão Convencional Commits.
 Resposta: Apenas uma linha de commit.
 
 ok, pode fazer o commit com esta mensagem
+
 Mostre um git history para saber se a mensagem foi corretamente commitada.

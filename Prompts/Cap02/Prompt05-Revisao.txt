@@ -1,0 +1,6 @@
+
+Analise este escopo e backlog e responda:
+1) O que esta grande demais para a release inicial?
+2) O que esta faltando para testabilidade?
+3) Quais 3 riscos tecnicos devo mitigar antes da implementacao?
+Resposta em bullets curtos.

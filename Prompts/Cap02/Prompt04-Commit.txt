@@ -1,0 +1,3 @@
+Contexto: Adicionei docs/escopo-mvp.md, docs/arquitetura.md e docs/backlog.md.
+Objetivo: Sugerir 3 mensagens de commit no padrao Conventional Commits.
+Resposta: Apenas as 3 linhas de commit e execute o commit para mim.
