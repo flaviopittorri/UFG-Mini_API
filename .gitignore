@@ -1,0 +1,65 @@
+# =========================
+# Python: bytecode e artefatos
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# Build, distribuição e metadata
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Ambiente virtual
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Testes, cobertura e cache
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.hypothesis/
+
+# =========================
+# Logs e arquivos temporários
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# Variáveis de ambiente e segredos
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Configurações locais de editor/IDE
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Artefatos do sistema operacional
+# =========================
+.DS_Store
+Thumbs.db

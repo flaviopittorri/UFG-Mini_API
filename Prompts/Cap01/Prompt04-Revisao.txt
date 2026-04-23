@@ -1,0 +1,8 @@
+Analise o código gerado para app/main.py e responda:
+1. quais riscos técnicos existem?
+2. O que pode quebrar em produção?
+Quais testes mínimos devo criar ?
+Respostar curtas, tipo checklist.
+
+Crie uma pasta Docs na raiz do projeto e salve esta 
+última resposta no formato .md, com o nome do arquivo Initial_Health_Diag.md nesta pasta Docs.

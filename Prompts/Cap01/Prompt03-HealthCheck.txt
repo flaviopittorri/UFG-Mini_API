@@ -1,0 +1,7 @@
+Prompt 3 - Endpoint de healthcheck
+Contexto: Projeto em Python 3.11 com FastAPI.
+Objetivo: Criar app/main.py com uma instancia FastAPI e endpoint GET /health retornando status ok e timestamp.
+Estilo: Tipagem e codigo limpo.
+Resposta: Forneca apenas o codigo de app/main.py.
+
+crie o arquivo requirements.txt com todos os pacotes necessários para este projeto, pode inclusive utilizar o ambiente virtual criado e instalar os pacotes necessários.

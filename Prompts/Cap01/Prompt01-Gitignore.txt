@@ -1,0 +1,12 @@
+Prompt 1 - .gitignore
+Contexto: Estou iniciando uma API Python com FastAPI em um repositório de produto.
+Objetivo: Gere um arquivo .gitignore para Python, ambiente virtual, cache de testes e configurações locais do editor.
+Estilo: Organize por seções com comentários.
+Resposta: Forneça apenas o conteúdo do arquivo .gitignore.
+
+Crie o arquivo .gitignore epode criar também o ambiente virtual .venv
+
+Esse projeto ainda não está versionado, inicie o git pra mim.
+
+
+

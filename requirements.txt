@@ -1,0 +1,8 @@
+# Runtime
+fastapi==0.136.0
+uvicorn[standard]==0.45.0
+pydantic==2.13.3
+
+# Development and testing
+pytest==9.0.3
+ruff==0.15.11
