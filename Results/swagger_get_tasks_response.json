@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Estudar para prova",
+      "description": "Revisar capítulos 1 a 5",
+      "due_date": "2026-05-10",
+      "priority": "alta"
+    },
+    {
+      "id": 2,
+      "title": "Fazer compras",
+      "description": "Comprar leite e pão",
+      "due_date": "2026-05-02",
+      "priority": "normal"
+    }
+  ]
+}
