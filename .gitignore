@@ -42,6 +42,9 @@ htmlcov/
 # =========================
 Prompts/
 
+# Arquivos internos não versionáveis
+Docs/roteiro_apresentacao_mvp.md
+
 # =========================
 # Logs e arquivos temporários
 # =========================
