@@ -53,8 +53,6 @@ Prompts/
 # Variáveis de ambiente e segredos
 # =========================
 .env
-.env.*
-!.env.example
 
 # =========================
 # Configurações locais de editor/IDE
