@@ -9,7 +9,11 @@ class HealthResponse(BaseModel):
     timestamp: datetime
 
 
+
+from app.api.task_routes import router as task_router
+
 app = FastAPI(title="Task Prioritization API")
+app.include_router(task_router)
 
 
 @app.get("/health", response_model=HealthResponse)
