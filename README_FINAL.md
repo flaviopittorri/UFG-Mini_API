@@ -62,15 +62,56 @@ MVP de uma micro-API para gestão de tarefas, com priorização sugerida por heu
      ```bash
      make run
      ```
-   - Manualmente:
+   - **Manual (sem Make):**
+     ```powershell
+     .venv\Scripts\Activate.ps1
+     .venv\Scripts\uvicorn.exe app.main:app --reload  # Windows
+     ```
      ```bash
-     .venv/Scripts/uvicorn.exe app.main:app --reload  # Windows
-     # ou
+     source .venv/bin/activate
      .venv/bin/uvicorn app.main:app --reload  # Linux/macOS
      ```
 3. Acesse:
    - API: http://127.0.0.1:8000
-   - Docs interativas: http://127.0.0.1:8000/docs
+   - **Swagger UI (docs interativas):** http://127.0.0.1:8000/docs
+   - Redoc: http://127.0.0.1:8000/redoc
+
+---
+
+## Testes manuais sugeridos
+
+Com a API rodando, acesse o Swagger UI em http://localhost:8000/docs e execute os seguintes testes:
+
+1. **Listar tarefas (GET /tasks)**
+   - Clique em "GET /tasks" > "Try it out" > "Execute".
+   - Deve retornar a lista de tarefas (pode estar vazia).
+
+2. **Criar uma nova tarefa (POST /tasks)**
+   - Clique em "POST /tasks" > "Try it out".
+   - Preencha o corpo com, por exemplo:
+     ```json
+     {
+       "title": "Estudar para prova",
+       "description": "Revisar capítulos 1 a 5",
+       "due_date": "2026-05-10"
+     }
+     ```
+   - Execute e verifique se a tarefa foi criada.
+
+3. **Buscar tarefa específica (GET /tasks/{task_id})**
+   - Após criar uma tarefa, copie o `id` retornado.
+   - Use "GET /tasks/{task_id}" para buscar pelo id.
+   - Deve retornar os detalhes da tarefa.
+
+4. **Atualizar uma tarefa (PUT /tasks/{task_id})**
+   - Use "PUT /tasks/{task_id}" para alterar título ou descrição.
+   - Verifique se a alteração foi aplicada.
+
+5. **Excluir uma tarefa (DELETE /tasks/{task_id})**
+   - Use "DELETE /tasks/{task_id}" para remover uma tarefa.
+   - Depois, tente buscar novamente para garantir que foi removida (deve retornar 404).
+
+---
 
 ### Exemplos de uso via HTTP (curl)
 
