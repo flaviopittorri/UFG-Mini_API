@@ -1,0 +1,49 @@
+# Capítulo 3 – Prompts para Codex/Copilot
+
+## Prompt 1 – Modelo Pydantic
+Contexto: API de tarefas em FastAPI para uso interno de equipe.
+Objetivo: Gerar modelos TaskCreate, TaskUpdate e TaskOut com tipagem e validações.
+Estilo: Pydantic V2, código limpo e docstrings curtas.
+Resposta: Apenas código de app/models/task.py.
+
+## Prompt 2 - Repositorio inicial
+Contexto: Preciso de persistencia inicial enxuta para viabilizar a primeira release.
+Objetivo: Criar TaskRepository em memoria com create, list, get_by_id, update e delete.
+Estilo: Python tipado, sem dependencias externas.
+Resposta: Codigo completo de app/repositories/task_repository.py.
+
+## Prompt 3 - Service com regra de prioridade
+Contexto: A prioridade da tarefa pode ser sugerida automaticamente.
+Objetivo: Criar TaskService que use TaskRepository e PriorityAdvisor.
+Estilo: Separar regra de negocio da camada de API.
+Resposta: Codigo de app/services/task_service.py.
+
+## Prompt 4 - PriorityAdvisor com fallback
+Contexto: Quero rodar sem custo de API quando nao houver chave.
+Objetivo: Implementar PriorityAdvisor com heuristica local e chamada opcional a LLM quando OPENAI_API_KEY existir.
+Estilo: Falha segura, timeout e fallback obrigatorio.
+Resposta: Codigo de app/services/priority_advisor.py.
+
+P: Percebi que você está com código repetido para o PriorityAdvisor. Avalie pois ele deveria estar no módulo python app/services/priority_advisor.py e não no app/serices/task_service.py, este último somente utiliza o que foi definido no primeiro.
+
+P: Valide se todo o código compila sem erro.
+Resposta: O código não compila sem erros: o módulo requests não está instalado ou disponível no ambiente. Para corrigir, instale o pacote requests ou adapte o código para não depender dele. Deseja instalar requests ou prefere uma solução sem dependências externas?
+P: Instale todos os pacotes.
+R: Todos os pacotes necessários foram instalados e o código agora compila sem erros.
+
+## Prompt 5 - Rotas CRUD
+Contexto: FastAPI com TaskService pronto.
+Objetivo: Criar rotas POST/GET/PUT/DELETE para tarefas com status HTTP corretos e tratamento de 404.
+Estilo: Router separado em app/api/task_routes.py.
+Resposta: Apenas o código do arquivo.
+
+## Prompt 6 - Revisao tecnica
+Revise os arquivos do core da API e responda:
+1) Quais pontos de acoplamento estao altos?
+2) Onde faltam validacoes?
+3) Quais 5 testes devo priorizar na proxima release?
+Resposta em checklist.
+
+Gere um arquivo .md numa pasta Results com as respostas desta revisão.
+R: Arquivo criado.
+
