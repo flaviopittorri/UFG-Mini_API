@@ -38,6 +38,11 @@ htmlcov/
 .hypothesis/
 
 # =========================
+# Diretórios ignorados do projeto
+# =========================
+Prompts/
+
+# =========================
 # Logs e arquivos temporários
 # =========================
 *.log
