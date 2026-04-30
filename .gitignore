@@ -24,6 +24,11 @@ env/
 ENV/
 
 # =========================
+# Relatório final no AVA
+# =========================
+UFG-Forum.txt
+
+# =========================
 # Testes, cobertura e cache
 # =========================
 .pytest_cache/
